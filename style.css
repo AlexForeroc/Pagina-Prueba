@@ -1,0 +1,138 @@
+/* Reset de elementos básicos */
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo del cuerpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Contenedor principal */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilo del encabezado */
+header {
+    background: #ffffff;
+    color: #0f0909;
+    padding: 20px 0;
+    text-align: center;
+    animation: fadeIn 2s;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+header img {
+    height: 100px;
+}
+
+h1{
+    font-weight: bold; 
+}
+
+span{
+    color: #253e65; 
+    border: 1px solid #253e65;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+
+/* Navegación */
+nav {
+    background: #2980b9;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #380b8d;
+}
+
+/* Secciones */
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #2c3e50;
+    position: relative;
+}
+
+section h2::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 4px;
+    background: #1abc9c;
+    bottom: -10px;
+    left: 0;
+    border-radius: 2px;
+    animation: slideIn 1s;
+}
+
+/* Pie de página */
+footer {
+    background: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+
+}
+/* Color enlace con transicion */
+footer a {
+    color: #1abc9c;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+/* Color resalte enlace*/
+footer a:hover {
+    color: #56e73c;
+}
+
+footer img {
+    height: 50px;
+}
+
+@keyframes slideIn {
+    from { width: 0; }
+    to { width: 50px; }
+}
+
